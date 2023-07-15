@@ -46,16 +46,6 @@
 
 \usepackage{mathrsfs}
 
-% \newcommand{\restr}[2]{
-%     \underset
-%     {\displaystyle \hphantom{#1 \hspace{2pt}} \smash{\big |} \lefteqn{\phantom{bruh}} \lefteqn{\hspace{2pt} \smash{\lefteqn{\phantom{bruh}}_{\displaystyle #2}}}}
-%     {{#1 \hspace{2pt}} {\big |}}\hspace{3pt}
-% }
-
-% \newcommand{\restrmid}[2]{
-%     \genfrac{}{}{0pt}{0}{#1}{\vphantom{#2}}\left| \genfrac{}{}{0pt}{0}{\lefteqn{\vphantom{#1}}}{#2} \right.
-% }
-
 \newcommand{\restrspace}[3]{
     \begin{array}[t]{c|l}
         #1 & \vphantom{\int\limits_{n}} #3  \\
@@ -76,6 +66,8 @@
          & #2 
     \end{array}
 }
+
+\newcommend{\xvee}{\stackrel{\displaystyle \vee}{\smash{\vee}}}
 
 \newcommand{\ang}{
     \begin{picture}(11,7)
