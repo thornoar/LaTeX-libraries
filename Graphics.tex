@@ -1,15 +1,23 @@
-\usepackage{tikz} %графическая библиотека
+\usepackage{tikz}
 
 \usepackage{tikz-cd}
-\usetikzlibrary{babel} %магия исправляюшая баг с компиляцией коммутативных диаграм
+\usetikzlibrary{babel}
 
 % \usepackage{amscd}
-
-\newcommand*{\circled}[1]{\tikz[baseline=(char.base)]{\node[shape=circle,draw,inner sep=2pt] (char) {#1};}}%команда рисования в кружочке  
-
 \usepackage{graphics}
 \usepackage{caption, subcaption}
 \usepackage{wrapfig}
 \usepackage{graphicx}
 
-\newcommand{\insertgraphics}[2]{\includegraphics[#1]{D:/MicrosoftVSCodeProjects/TeXProjects/Media/images/Insert/#2}}
+\usepackage{import}
+\usepackage{xifthen}
+\pdfminorversion=7
+\usepackage{pdfpages}
+\usepackage{transparent}
+\newcommand{\incfig}[1]{%
+	\def\svgwidth{\columnwidth}
+	\import{./figures/}{#1.pdf_tex}
+}
+
+\newcommand*{\circled}[1]{\tikz[baseline=(char.base)]{\node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
+\newcommand{\rfig}[2]{\includegraphics[width=#1]{rtmp/#2}}

@@ -1,7 +1,4 @@
-\usepackage[inline]{asymptote}
-% \usepackage{attachfile2}
-
-%\RequirePackage{grfext}\relax line 179 in "C:\tools\TinyTeX\texmf-dist\tex\latex\epstopdf-pkg\epstopdf-base.sty"
+\usepackage{asymptote}
 
 \makeatletter
 \newcommand{\asycode}[2][]{%
@@ -23,21 +20,15 @@
     \asy@input@graphic
 }
 \makeatother
-\newcommand{\ASYinput}[1]{%
-    \asycode{include #1;}
-}
-\newcommand{\ASYinputx}[1]{%
-\input{#1.asy}
-}
+\newcommand{\asyinput}[1]{ \asycode{include #1;} }
+\newcommand{\asyinputx}[1]{ \input{#1.asy} }
 
 \begin{asydef}
-
-usepackage("bm");
-texpreamble("\def\V#1{\bm{#1}}");
+///<
+// usepackage("bm");
+// texpreamble("\def\V#1{\bm{#1}}");
 defaultpen(fontsize(12pt));
 
-import "LaTeX/Asymptote/General.asy" as general;
-
-
+import "LaTeX/Asymptote/general.asy" as general;
+///>
 \end{asydef}
-

@@ -1,32 +1,17 @@
 \usepackage{bookmark}
-
 \usepackage{lipsum} 
-
 \usepackage[bottom]{footmisc}
 
-% \oddsidemargin=-0.1in 
-% \evensidemargin=-0.1in 
-% \textwidth=6.6in
-% \topmargin=-0.5in 
-% \textheight=9.1in
-
 \usepackage{calc}
-
 \usepackage{textcomp}
-
-\usepackage{sectsty}
-
-% \sectionfont{\centering}
-% \subsectionfont{\centering}
-% \subsubsectionfont{\centering}
-
 \usepackage{pdfpages}
-
 \usepackage{color}
-
-\renewcommand{\b}[1]{{\color{blue}{#1}}}
+\usepackage{xcolor}
+\usepackage{cite}
 
 \usepackage{hyperref}
+\usepackage{url}
+\usepackage{titlesec}
 
 \hypersetup{colorlinks=true}
 \hypersetup{linkcolor=black}
@@ -35,62 +20,48 @@
 \hypersetup{pdfhighlight=/P}
 
 \newcommand{\annotate}[1]{
-	\vspace{4cm}
- 
-	\begin{center}
-		\textbf{Annotation}\\
-		\textit{
-			#1	}
-	\end{center}
- 
-    \pagebreak
+\vspace{4cm}
+
+\begin{center}
+    \textbf{Annotation}\\
+    \textit{#1}
+\end{center}
+
+\pagebreak
 }
 
 \newcommand{\printtitlepage}[5]{
-\begin{center}
-\bf{#1}
-\end{center}
-\vspace{30mm}
-\rule[0.5ex]{\linewidth}{2pt}\vspace*{-\baselineskip}\vspace*{3.2pt} 
-\rule[0.5ex]{\linewidth}{1pt}\\[6mm] 
-{\Huge \sc \centerline{#2}}\\[5mm]
-\rule[0.5ex]{\linewidth}{1pt}\vspace*{-\baselineskip}\vspace{3.3pt} 
-\rule[0.5ex]{\linewidth}{2pt}\\ 
-
-\begin{center}
-    \Large{#3\\}
-\end{center}
-\vspace{-6mm}
-\begin{center}
-    {#4}
-\end{center}
-\annotate{#5}
-\newpage
+    \begin{center}
+    \bf{#1}
+    \end{center}
+        \vspace{30mm}
+        \rule[0.5ex]{\linewidth}{2pt}\vspace*{-\baselineskip}\vspace*{3.2pt} 
+        \rule[0.5ex]{\linewidth}{1pt}\\[6mm] 
+        {\Huge \sc \centerline{#2}}\\[5mm]
+        \rule[0.5ex]{\linewidth}{1pt}\vspace*{-\baselineskip}\vspace{3.3pt} 
+        \rule[0.5ex]{\linewidth}{2pt}\\ 
+    \begin{center}
+        \Large{#3\\}
+    \end{center}
+    \vspace{-6mm}
+    \begin{center}
+        {#4}
+    \end{center}
+    \annotate{#5}
+    \newpage
 }
 
 \newcommand{\printtitle}[2]{
 \begin{center}
-	{\Large \bf #1}
-	\rule[0.5ex]{\linewidth}{1.5pt}\vspace*{-\baselineskip}\vspace{3.3pt} \\
-	\vspace{5mm}
-	#2
+    {\Large \bf #1}
+    \rule[0.5ex]{\linewidth}{1.5pt}\vspace*{-\baselineskip}\vspace{3.3pt} \\
+    \vspace{5mm}
+    #2
 \end{center}
 }
 
-% \includepdf[pages=-]{Problem-statement.pdf}
-
 \newcommand*{\keyword}[1]{\textit{#1}}
-
-\newcommand{\eimplies}{\,\Longrightarrow\,}
 
 \newcommand{\emptysymbol}{\phantom{.}}
 
 \newcommand{\bfit}[1]{\textit{\textbf{#1}}}
-
-% \begin{thebibliography}{3}
-
-% \bibitem{Gromov}
-% О. Л. Виноградов, А. Л. Громов, <<\href{https://vk.com/doc2162375_524597739?hash=3f139ea31a79ce181a&dl=9be60b8b0ae19e2aa4}{\u{Курс математического анализа, часть 1}}>>.
-
-% \addcontentsline{toc}{section}{\numberline{}Список литературы}
-% \end{thebibliography}
