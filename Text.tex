@@ -12,6 +12,7 @@
 \usepackage{hyperref}
 \usepackage{url}
 \usepackage{titlesec}
+% \usepackage{xr}
 \usepackage[]{subfiles}
 \usepackage{geometry}
 
@@ -21,15 +22,17 @@
 \hypersetup{urlcolor=blue}
 \hypersetup{pdfhighlight=/P}
 
+\newcommand{\si}[1]{\,\text{#1}}
+
 \newcommand{\annotate}[1]{
-\vspace{4cm}
+    \vspace{4cm}
 
-\begin{center}
-    \textbf{Annotation}\\
-    \textit{#1}
-\end{center}
+    \begin{center}
+        \textbf{Annotation}\\
+        \textit{#1}
+    \end{center}
 
-\pagebreak
+    \pagebreak
 }
 
 \newcommand{\printtitlepage}[5]{
@@ -54,12 +57,12 @@
 }
 
 \newcommand{\printtitle}[2]{
-\begin{center}
-    {\Large \bf #1}
-    \rule[0.5ex]{\linewidth}{1.5pt}\vspace*{-\baselineskip}\vspace{3.3pt} \\
-    \vspace{5mm}
-    #2
-\end{center}
+    \begin{center}
+        {\Large \bf #1}
+        \rule[0.5ex]{\linewidth}{1.5pt}\vspace*{-\baselineskip}\vspace{3.3pt} \\
+        \vspace{5mm}
+        #2
+    \end{center}
 }
 
 \newcommand*{\keyword}[1]{\textit{#1}}
